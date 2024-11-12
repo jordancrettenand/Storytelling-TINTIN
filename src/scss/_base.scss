@@ -2,6 +2,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  // ----
+  // Futura PT Book
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  // Futura PT Book Oblique
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  // Futura PT Heavy
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  // Futura PT Heavy Oblique
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  // Futura PT Bold
+  font-family: "futura-pt-bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  // Futura PT Bold Oblique
+  font-family: "futura-pt-bold", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  // ------
+  // Pedestria MVB Bold
+  font-family: "pedestria-mvb", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 a {
@@ -13,21 +43,37 @@ video {
   display: block;
 }
 
-// ----------- colone de couleur : bootstrap
+// ----------- colone de couleur : bootstrap------------------------------------------------
 
-.row + .row {
-  margin-top: 16px;
+// .row + .row {
+//   margin-top: 16px;
+// }
+
+// .row > .col,
+// .row > [class^="col-"] {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   background-color: rgba(86, 61, 124, 0.15);
+//   border: 1px solid rgba(86, 61, 124, 0.2);
+// }
+
+// ---------------------------------------------------------------------------------------
+
+h1 {
+  font-family: "pedestria-mvb", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
+// ---------------------------------------------------------------------------------------
+
+.container {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-// -----------
+// ---------------------------------------------------------------------------------------
 
 .livres {
   max-width: 475px;
@@ -43,7 +89,12 @@ video {
 }
 
 .images-BD {
-  max-width: 425px;
+  width: 425px;
+  display: flex;
+}
+
+.toute-les-images-BD {
+  display: flex;
 }
 
 .logo {
@@ -51,10 +102,110 @@ video {
 }
 
 .réseaux-sociaux {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 36px;
   max-width: 66px;
 }
 
 .arriere-plan {
   background-image: url("../img/payasage vide tintin.jpg");
   min-height: 887px;
+}
+
+.bouton {
+  background-color: #ffd300; /* Couleur de fond jaune */
+  color: black; /* Couleur du texte noir */
+  border: 1px solid black; /* Bord noir de 1px */
+  padding: 12px 50px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  text-decoration: none; /* Pas de soulignement */
+  display: inline-block; /* Pour le rendre cliquable */
+  cursor: pointer; /* Changer le curseur au survol */
+  transition: transform 0.3s; /* Transition pour l'agrandissement */
+}
+
+.bouton:hover {
+  transform: scale(1.1); /* Agrandir le bouton au survol */
+  background-color: #ffd300; /* Couleur au survol (optionnel) */
+}
+
+.lois {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  text-align: center;
+}
+
+// --------
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Couleur de fond */
+  padding: 20px;
+}
+
+.boc {
+  display: flex; /* Utiliser flexbox pour aligner les boîtes côte à côte */
+  flex-wrap: nowrap;
+  justify-content: space-between; /* Espacement entre les boîtes */
+}
+
+.commentaire {
+  background-color: #ffd300; /* Couleur de fond de la boîte de commentaire */
+  border: 1px solid #0d0d0d; /* Bord de la boîte */
+  width: 330px; /* Largeur fixe */
+  height: 188px; /* Hauteur fixe */
+  padding: 20px; /* Espacement intérieur augmenté */
+  margin-bottom: 20px; /* Espacement entre les boîtes */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre */
+  overflow: hidden; /* Éviter le débordement du texte */
+}
+
+.header {
+  display: flex; /* Utiliser flexbox pour aligner les éléments */
+  justify-content: space-between; /* Espacement entre les éléments */
+  align-items: center; /* Centrer verticalement */
+}
+
+.etoiles {
+  font-size: 20px; /* Taille de la notation par étoiles */
+}
+
+.profil {
+  display: flex; /* Utiliser flexbox pour aligner l'icône et le nom */
+  align-items: center; /* Centrer verticalement */
+}
+
+.icon {
+  width: 30px; /* Largeur de l'icône de profil */
+  height: 30px; /* Hauteur de l'icône de profil */
+  border-radius: 50%; /* Arrondir l'icône */
+  margin-right: 10px; /* Espacement entre l'icône et le nom */
+}
+
+.nom {
+  font-weight: bold; /* Mettre le nom en gras */
+}
+
+.texte {
+  margin-top: 10px; /* Espacement entre l'en-tête et le texte */
+  font-size: 14px; /* Taille du texte */
+  line-height: 1.4; /* Hauteur de ligne pour le texte */
+  overflow: hidden; /* Éviter le débordement du texte */
+  text-overflow: ellipsis; /* Ajouter des points de suspension si le texte déborde */
+  display: -webkit-box; /* Pour le support de l'ellipsis */
+  -webkit-box-orient: vertical; /* Orientation verticale */
+  -webkit-line-clamp: 4; /* Limiter à 4 lignes */
+}
+
+// -------------
+
+hr {
+  width: 100%; /* Prendre toute la largeur du conteneur */
+  height: 5px; /* Hauteur de la ligne */
+  background-color: rgb(255, 28, 28); /* Couleur de la ligne */
+  margin: 20px 0; /* Espacement au-dessus et en dessous de la ligne */
 }
