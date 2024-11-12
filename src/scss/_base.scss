@@ -13,7 +13,7 @@ video {
   display: block;
 }
 
-// -----------
+// ----------- colone de couleur : bootstrap
 
 .row + .row {
   margin-top: 16px;
@@ -25,4 +25,36 @@ video {
   padding-bottom: 12px;
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+// -----------
+
+.livres {
+  max-width: 475px;
+}
+
+.editions {
+  display: flex;
+  flex-direction: row;
+}
+
+.livre-de-vente {
+  max-width: 658px;
+}
+
+.images-BD {
+  max-width: 425px;
+}
+
+.logo {
+  max-width: 260px;
+}
+
+.réseaux-sociaux {
+  max-width: 66px;
+}
+
+.arriere-plan {
+  background-image: url("../img/payasage vide tintin.jpg");
+  min-height: 887px;
 }
