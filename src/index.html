@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/tec3jxv.css" />
   </head>
   <body>
+    <!-- ------------------------- HEADER --------------------------------- -->
     <header>
       <div class="container">
         <div class="row arriere-plan">
@@ -22,12 +23,29 @@
           <div class="col-12">
             <a href="#" class="bouton"> SURVOLEZ LA MISSION </a>
           </div>
+
+          <!-- barre de progression
+                 --- -->
+          <div class="bg-progress">
+            <div class="progressBar"></div>
+          </div>
+
+          <div class="nav">
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+          </div>
+
+          <div class="footer"></div>
+          <!------------------ -->
         </div>
       </div>
     </header>
 
     <br />
-
+    <!-- ------------------------- MAIN --------------------------------- -->
     <main>
       <div class="container">
         <div class="row">
@@ -409,7 +427,7 @@
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <!-- ---------------------------------------------------------- -->
+      <!-- VIDEO ---------------------------------------------------------- -->
 
       <br />
 
@@ -426,6 +444,9 @@
       <br />
 
       <!-- ---------------------------------------------------------- -->
+
+      <!-- EDITIONS LIVRES ---------------------------------------------------------- -->
+
       <div id="imageCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -603,6 +624,7 @@
 
     <br />
 
+    <!-- ------------------------- FOOTER --------------------------------- -->
     <footer>
       <div class="container">
         <div class="row">
@@ -626,10 +648,24 @@
               />
             </div>
           </div>
+
+          <!-- NEWSLETTER ---- -->
           <div class="col-6">
             <h3>S’abonner à la newsletter</h3>
             <p>Restez informés des sorties de Casterman</p>
+
+            <div class="formulaire-container">
+              <input
+                type="email"
+                id="email-input"
+                placeholder="exemple@gmail.com"
+                required
+              />
+              <a href="#" class="bouton">S'abonnez</a>
+            </div>
           </div>
+          <!-- -------------- -->
+
           <div class="col-3">
             <h3>A propos</h3>
             <li>
@@ -645,6 +681,7 @@
         </div>
       </div>
 
+      <!-- CREDIT LOIS ---- -->
       <div class="container">
         <div class="row">
           <hr />
@@ -660,6 +697,7 @@
           </div>
         </div>
       </div>
+      <!-- -------------- -->
     </footer>
 
     <script src="js/main.js" type="module"></script>
