@@ -79,11 +79,7 @@ h1 {
   max-width: 475px;
 }
 
-.editions {
-  display: flex;
-  flex-direction: row;
-}
-
+//----
 .livre-de-vente {
   max-width: 658px;
 }
@@ -96,6 +92,7 @@ h1 {
 .toute-les-images-BD {
   display: flex;
 }
+//----
 
 .logo {
   max-width: 260px;
@@ -144,7 +141,7 @@ footer {
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4; /* Couleur de fond */
-  padding: 20px;
+  overflow-x: hidden; /* Masque le débordement horizontal */
 }
 
 .boc {
@@ -208,4 +205,20 @@ hr {
   height: 5px; /* Hauteur de la ligne */
   background-color: rgb(255, 28, 28); /* Couleur de la ligne */
   margin: 20px 0; /* Espacement au-dessus et en dessous de la ligne */
+}
+
+___________________________________ .carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner .col {
+  padding: 0 5px;
+}
+
+//------------------------------- - -
+video {
+  width: 100%; /* Prend toute la largeur de l'écran */
+  height: auto; /* Garde le ratio d'aspect */
+  display: block; /* Évite les espaces en bas */
 }
