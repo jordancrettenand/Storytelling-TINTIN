@@ -13,33 +13,36 @@
     <header>
       <div class="container">
         <div class="row arriere-plan">
-          <div class="col-12">progression fusée</div>
+          <div class="col-12">
+            <!-- barre de progression --- -->
+            <div id="progress-container">
+              <div id="progress-bar"></div>
+              <img
+                id="progress-icon"
+                src="img/Fusee-mini-slider 5.png"
+                alt="Fusée"
+              />
+            </div>
+            <!------------------ -->
+          </div>
           <div class="col-6">
             <img class="logo" src="img/logo-casterman.jpg" alt="" />
           </div>
           <div class="col-6">
-            <a href="#" class="bouton">ACHETER LA BD</a>
+            <div class="droite">
+              <a
+                href="https://www.fr.fnac.ch/a101713/Tintin-Objectif-Lune-Herge"
+                class="bouton"
+                target="_blank"
+                >ACHETER LA BD</a
+              >
+            </div>
           </div>
           <div class="col-12">
-            <a href="#" class="bouton"> SURVOLEZ LA MISSION </a>
+            <div class="centrale">
+              <a href="#" class="bouton"> SURVOLEZ LA MISSION </a>
+            </div>
           </div>
-
-          <!-- barre de progression
-                 --- -->
-          <div class="bg-progress">
-            <div class="progressBar"></div>
-          </div>
-
-          <div class="nav">
-            <div class="child"></div>
-            <div class="child"></div>
-            <div class="child"></div>
-            <div class="child"></div>
-            <div class="child"></div>
-          </div>
-
-          <div class="footer"></div>
-          <!------------------ -->
         </div>
       </div>
     </header>
@@ -47,7 +50,7 @@
     <br />
     <!-- ------------------------- MAIN --------------------------------- -->
     <main>
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <div class="col-12 toute-les-images-BD">
             <img class="images-BD" src="img/images-BD-1.png" alt="" />
@@ -63,7 +66,7 @@
             <img class="images-BD" src="img/images-BD-11.png" alt="" />
           </div>
         </div>
-      </div>
+      </div> -->
 
       <br />
 
@@ -102,7 +105,14 @@
                 ISBN - 13:9782203114791</strong
               >
             </p>
-            <a href="#" class="bouton">ACHETER LA BD</a>
+            <div class="gauche section-achat">
+              <a
+                href="https://www.fr.fnac.ch/a101713/Tintin-Objectif-Lune-Herge"
+                class="bouton"
+                target="_blank"
+                >ACHETER LA BD</a
+              >
+            </div>
           </div>
 
           <div class="col-6">
@@ -118,6 +128,7 @@
       <br />
 
       <!-- animation commentaire ---------------------------------------------------------- -->
+
       <div id="imageCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -427,6 +438,7 @@
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
       <!-- VIDEO ---------------------------------------------------------- -->
 
       <br />
@@ -455,7 +467,7 @@
                 <!-- le commentaire -- 1 -->
                 <img
                   class="livres"
-                  src="img/tintin-et-les-picaros-fr.jpg"
+                  src="img/tintin-et-les-picaros-fr.jpg?width=800"
                   alt=""
                 />
 
@@ -465,7 +477,7 @@
                 <!-- le commentaire -- 2 -->
                 <img
                   class="livres"
-                  src="img/tintin-et-l-alph-art-fr.jpg"
+                  src="img/tintin-et-l-alph-art-fr.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 2 -->
@@ -475,7 +487,7 @@
 
                 <img
                   class="livres"
-                  src="img/tintin-au-tibet-cover-fr.jpg"
+                  src="img/tintin-au-tibet-cover-fr.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 3 -->
@@ -489,7 +501,7 @@
 
                 <img
                   class="livres"
-                  src="img/tintin-au-pays-des-soviets-fr_v2.jpg"
+                  src="img/tintin-au-pays-des-soviets-fr_v2.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 4 -->
@@ -498,7 +510,7 @@
                 <!-- le commentaire -- 5 -->
                 <img
                   class="livres"
-                  src="img/tintin-au-pays-de-l-or-noir-fr.jpg"
+                  src="img/tintin-au-pays-de-l-or-noir-fr.jpg?width=800"
                   alt=""
                 />
 
@@ -509,7 +521,7 @@
 
                 <img
                   class="livres"
-                  src="img/on-a-marche-sur-la-lune.jpg"
+                  src="img/on-a-marche-sur-la-lune.jpg?width=800"
                   alt=""
                 />
 
@@ -523,7 +535,7 @@
                 <!-- le commentaire -- 7 -->
                 <img
                   class="livres"
-                  src="img/les-cigares-du-pharaon.png"
+                  src="img/les-cigares-du-pharaon.png?width=800"
                   alt=""
                 />
 
@@ -533,7 +545,7 @@
                 <!-- le commentaire -- 8 -->
                 <img
                   class="livres"
-                  src="img/les-bijoux-de-la-castafiore-fr.jpg"
+                  src="img/les-bijoux-de-la-castafiore-fr.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 8 -->
@@ -542,7 +554,7 @@
                 <!-- le commentaire -- 9 -->
                 <img
                   class="livres"
-                  src="img/les-7-boules-de-cristal-fr.jpg"
+                  src="img/les-7-boules-de-cristal-fr.jpg?width=800"
                   alt=""
                 />
 
@@ -556,7 +568,7 @@
                 <!-- le commentaire -- 10 -->
                 <img
                   class="livres"
-                  src="img/le-tresor-de-rackham-le-rouge-fr.jpg"
+                  src="img/le-tresor-de-rackham-le-rouge-fr.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 10 -->
@@ -565,7 +577,7 @@
                 <!-- le commentaire -- 11 -->
                 <img
                   class="livres"
-                  src="img/le-temple-du-soleil-fr.jpg"
+                  src="img/le-temple-du-soleil-fr.jpg?width=800"
                   alt=""
                 />
 
@@ -575,7 +587,7 @@
                 <!-- le commentaire -- 12 -->
                 <img
                   class="livres"
-                  src="img/le-secret-de-la-licorne-fr.jpg"
+                  src="img/le-secret-de-la-licorne-fr.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 12 -->
@@ -630,7 +642,7 @@
         <div class="row">
           <div class="col-3">
             <img class="logo" src="img/logo-casterman.jpg" alt="" />
-            <div class="réseaux-sociaux">
+            <div class="box-réseaux-sociaux">
               <img
                 class="réseaux-sociaux"
                 src="img/icone-facebook.jpg"
@@ -685,10 +697,12 @@
       <div class="container">
         <div class="row">
           <hr />
-
           <div class="col-6">
-            <p>© copyright 2024 - Tous droits réservés</p>
+            <div class="gauche">
+              <p>© copyright 2024 - Tous droits réservés</p>
+            </div>
           </div>
+
           <div class="col-6">
             <a class="lois" href="#"
               >Conditions générales • Politique de confidentialité •
@@ -703,3 +717,5 @@
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
+
+<!-- à mettre sur les image de grande taille pour diminuer le poid et augmenter la vitesse de chargement -> ?width=800 -->

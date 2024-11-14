@@ -76,12 +76,17 @@ h1 {
 // ---------------------------------------------------------------------------------------
 
 .livres {
-  max-width: 475px;
+  max-width: 460px;
 }
 
 //----
 .livre-de-vente {
   max-width: 658px;
+}
+
+.section-achat {
+  margin-top: 62px;
+  margin-bottom: 324px;
 }
 
 .images-BD {
@@ -121,8 +126,8 @@ h1 {
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4; /* Couleur de fond */
-  padding: 20px;
-  overflow-x: hidden; /* Masque le débordement horizontal */
+  // padding: 20px;
+  // overflow-x: hidden; /* Masque le débordement horizontal */
 }
 
 .boc {
@@ -195,6 +200,8 @@ video {
   width: 100%; /* Prend toute la largeur de l'écran */
   height: auto; /* Garde le ratio d'aspect */
   display: block; /* Évite les espaces en bas */
+  margin-top: 176;
+  margin-bottom: 263px;
 }
 
 //--- Bouton scroll ---------------------------- - -
@@ -215,13 +222,25 @@ footer {
 
 .logo {
   max-width: 260px;
+  margin-bottom: 105px;
+  margin-left: 50px;
+}
+
+footer .logo {
+  margin: 0;
   margin-bottom: 46px;
+}
+
+.box-réseaux-sociaux {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .réseaux-sociaux {
   display: flex;
   flex-wrap: nowrap;
-  margin-right: 36px;
+  // margin-right: 36px;
   max-width: 66px;
   margin-bottom: 70px;
 }
@@ -247,7 +266,7 @@ hr {
   width: 100%; /* Prendre toute la largeur du conteneur */
   height: 1px; /* Hauteur de la ligne */
   background-color: #fff; /* Couleur de la ligne */
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .lois {
@@ -258,6 +277,8 @@ hr {
 
 .formulaire-container {
   padding: 20px; /* Ajout de padding pour le conteneur */
+  display: flex;
+  justify-content: center;
 }
 
 input[type="email"] {
@@ -268,48 +289,80 @@ input[type="email"] {
   height: 66px; /* Hauteur du champ de texte */
 }
 
+.bouton-newsletter {
+  background-color: #ffd300; /* Couleur de fond jaune */
+  color: black; /* Couleur du texte noir */
+  border: 1px solid black; /* Bord noir de 1px */
+  padding: 12px 50px; /* Espacement intérieur */
+  text-decoration: none; /* Pas de soulignement */
+  cursor: pointer; /* Changer le curseur au survol */
+  transition: transform 0.3s; /* Transition pour l'agrandissement */
+  display: flex;
+  align-items: center;
+}
+
+.bouton-newsletter:hover {
+  transform: scale(1.1); /* Agrandir le bouton au survol */
+  background-color: #ffd300; /* Couleur au survol (optionnel) */
+}
+
 //------------------------------- - -
 
 //-- barre de progression ----------------------------- - -
-.child {
-  width: 100%;
-  height: 500px;
-}
-
-.child:first-child {
-  background: red;
-}
-
-.child:nth-child(2) {
-  background: green;
-}
-
-.child:nth-child(3) {
-  background: black;
-}
-
-.child:nth-child(4) {
-  background: purple;
-}
-
-.child:last-child {
-  background: blue;
-}
-
-.bg-progress {
-  width: 100%;
+#progress-container {
   position: fixed;
-  height: 5px;
-  top: 0;
+  top: 26px;
+  left: 20px;
+  right: 20px;
+  height: 10px; /* Augmentez la hauteur pour la bordure */
+  background-color: #211f1f; /* Couleur de fond de la bordure */
+  z-index: 1000;
+  border-radius: 5px; /* Arrondi des angles de la bordure */
+  padding: 2px; /* Ajoute de l'espace autour de la barre jaune */
 }
 
-.progressBar {
-  width: 0;
+#progress-bar {
   height: 100%;
-  background: yellow;
+  background-color: rgb(230, 192, 0);
+  transition: width 0.1s ease;
+  border-radius: 5px; /* Arrondi des angles de la barre jaune */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optionnel : ajoute une ombre pour le style */
 }
 
-.footer {
-  height: 800px;
+#progress-icon {
+  position: absolute;
+  top: -15px; /* Ajustez selon vos besoins pour que la fusée soit bien visible */
+  height: 40px; /* Agrandir la taille de la fusée (20px x 2) */
+  transition: left 0.1s ease; /* Animation de mouvement */
 }
+//------------------------------- - -
+
+//-- alignement ----------------------------- - -
+.centrale {
+  display: flex;
+  justify-content: center;
+}
+
+.droite {
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+}
+
+.gauche {
+  display: flex;
+  justify-content: left;
+}
+//------------------------------- - -
+
+//-- Main ----------------------------- - -
+
+main {
+  margin: 50px;
+}
+//------------------------------- - -
+
+//------------------------------- - -
+
+//------------------------------- - -
 //------------------------------- - -

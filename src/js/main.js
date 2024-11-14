@@ -23,16 +23,13 @@ function submitEmail() {
 
 // -- Barre de progression -----------------------------------------------------------------------
 window.onscroll = function () {
-  var d = document,
-    doc = d.documentElement;
-  var top = doc.scrollTop || window.pageYOffset || d.body.scrollTop,
-    het = d.getElementsByClassName("nav")[0].scrollHeight,
-    wid = doc.clientWidth || d.body.clientWidth;
-  var childs = d.querySelectorAll(".nav .child"),
-    s = childs[0].offsetTop;
-  var scroll = (top - s) * (wid / het);
-  scroll =
-    scroll >= het * (wid / het) ? het * (wid / het) : top - s < 10 ? 0 : scroll;
-  d.getElementsByClassName("progressBar")[0].style.width = scroll + "px";
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  var windowHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  var scrollPercent = (scrollTop / windowHeight) * 100;
+
+  document.getElementById("progress-bar").style.width = scrollPercent + "%";
+  document.getElementById("progress-icon").style.left = scrollPercent + "%"; // Déplace la fusée
 };
 // -------------------------------------------------------------------------
