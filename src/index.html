@@ -19,14 +19,18 @@
               <div id="progress-bar"></div>
               <img
                 id="progress-icon"
-                src="img/Fusee-mini-slider 5.png"
+                src="img/icones/Fusee-mini-slider 5.png"
                 alt="Fusée"
               />
             </div>
             <!------------------ -->
           </div>
           <div class="col-6">
-            <img class="logo" src="img/logo-casterman.jpg" alt="" />
+            <img
+              class="logo"
+              src="img/icones/logo-casterman.png"
+              alt="logo casterman"
+            />
           </div>
           <div class="col-6">
             <div class="droite">
@@ -67,6 +71,56 @@
           </div>
         </div>
       </div> -->
+
+      <style>
+        /* Style pour le conteneur principal */
+        .carousel-container {
+          display: flex;
+          overflow-x: auto;
+          background-color: #000;
+          padding: 20px;
+          scrollbar-width: thin; /* Pour un défilement plus fin sur Firefox */
+          scrollbar-color: #666 #333;
+        }
+
+        /* Masque les barres de défilement par défaut */
+        .carousel-container::-webkit-scrollbar {
+          height: 8px;
+        }
+        .carousel-container::-webkit-scrollbar-thumb {
+          background-color: #666;
+          border-radius: 10px;
+        }
+        .carousel-container::-webkit-scrollbar-track {
+          background-color: #333;
+        }
+
+        /* Style pour les images dans le carrousel */
+        .carousel-container img {
+          max-width: 665px;
+          margin-right: 20px;
+          height: auto;
+        }
+
+        /* Pour éviter la dernière marge droite */
+        .carousel-container img:last-child {
+          margin-right: 0;
+        }
+      </style>
+
+      <div class="carousel-container">
+        <img src="img/editions/l-affaire-tournesol-fr.jpg" alt="Image 1" />
+        <img src="img/editions/l-affaire-tournesol-fr.jpg" alt="Image 2" />
+        <img src="img/editions/l-affaire-tournesol-fr.jpg" alt="Image 3" />
+        <img src="img/editions/l-affaire-tournesol-fr.jpg" alt="Image 4" />
+        <img src="img/editions/l-affaire-tournesol-fr.jpg" alt="Image 5" />
+        <img src="img/editions/l-affaire-tournesol-fr.jpg" alt="Image 6" />
+        <img src="img/editions/l-affaire-tournesol-fr.jpg" alt="Image 7" />
+        <img src="img/editions/l-affaire-tournesol-fr.jpg" alt="Image 8" />
+        <img src="img/editions/l-affaire-tournesol-fr.jpg" alt="Image 9" />
+        <img src="img/editions/l-affaire-tournesol-fr.jpg" alt="Image 10" />
+        <img src="img/editions/l-affaire-tournesol-fr.jpg" alt="Image 11" />
+      </div>
 
       <br />
 
@@ -116,11 +170,24 @@
           </div>
 
           <div class="col-6">
-            <img
-              class="livre-de-vente"
-              src="img/Book Perspective Mockup 4.png"
-              alt=""
-            />
+            <img class="livre-de-vente" src="img/vente/livre-bier.png" alt="" />
+            <div class="photos">
+              <img
+                class="presentation"
+                src="img/vente/livre-face-avant.png"
+                alt="image de la couverture avant du livre"
+              />
+              <img
+                class="presentation"
+                src="img/vente/livre-int.png"
+                alt="image de l'intérieur du livre"
+              />
+              <img
+                class="presentation"
+                src="img/vente/livre face-arriere.png"
+                alt="image de la couverture arrière du livre"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -143,7 +210,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Albert Einstein</span>
                       <!-- Nom de la personne -->
@@ -165,7 +236,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Albert Einstein</span>
                       <!-- Nom de la personne -->
@@ -187,7 +262,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Albert Einstein</span>
                       <!-- Nom de la personne -->
@@ -213,7 +292,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Albert Einstein</span>
                       <!-- Nom de la personne -->
@@ -235,7 +318,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Albert Einstein</span>
                       <!-- Nom de la personne -->
@@ -257,7 +344,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Albert Einstein</span>
                       <!-- Nom de la personne -->
@@ -282,7 +373,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Marie Curie</span>
                       <!-- Nom de la personne -->
@@ -304,7 +399,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Albert Einstein</span>
                       <!-- Nom de la personne -->
@@ -326,7 +425,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Albert Einstein</span>
                       <!-- Nom de la personne -->
@@ -352,7 +455,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Albert Einstein</span>
                       <!-- Nom de la personne -->
@@ -374,7 +481,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Albert Einstein</span>
                       <!-- Nom de la personne -->
@@ -395,7 +506,11 @@
                       <!-- Notation par étoiles -->
                     </div>
                     <div class="profil">
-                      <img src="img/user-icon.jpg" alt="Profil" class="icon" />
+                      <img
+                        src="img/icones/user-icon.png"
+                        alt="Profil"
+                        class="icon"
+                      />
                       <!-- Icône de profil -->
                       <span class="nom">Marie Curie</span>
                       <!-- Nom de la personne -->
@@ -467,7 +582,7 @@
                 <!-- le commentaire -- 1 -->
                 <img
                   class="livres"
-                  src="img/tintin-et-les-picaros-fr.jpg?width=800"
+                  src="img/editions/tintin-et-les-picaros-fr.jpg?width=800"
                   alt=""
                 />
 
@@ -477,7 +592,7 @@
                 <!-- le commentaire -- 2 -->
                 <img
                   class="livres"
-                  src="img/tintin-et-l-alph-art-fr.jpg?width=800"
+                  src="img/editions/tintin-et-l-alph-art-fr.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 2 -->
@@ -487,7 +602,7 @@
 
                 <img
                   class="livres"
-                  src="img/tintin-au-tibet-cover-fr.jpg?width=800"
+                  src="img/editions/tintin-au-tibet-cover-fr.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 3 -->
@@ -501,7 +616,7 @@
 
                 <img
                   class="livres"
-                  src="img/tintin-au-pays-des-soviets-fr_v2.jpg?width=800"
+                  src="img/editions/tintin-au-pays-des-soviets-fr_v2.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 4 -->
@@ -510,7 +625,7 @@
                 <!-- le commentaire -- 5 -->
                 <img
                   class="livres"
-                  src="img/tintin-au-pays-de-l-or-noir-fr.jpg?width=800"
+                  src="img/editions/tintin-au-pays-de-l-or-noir-fr.jpg?width=800"
                   alt=""
                 />
 
@@ -521,7 +636,7 @@
 
                 <img
                   class="livres"
-                  src="img/on-a-marche-sur-la-lune.jpg?width=800"
+                  src="img/editions/on-a-marche-sur-la-lune.jpg?width=800"
                   alt=""
                 />
 
@@ -535,7 +650,7 @@
                 <!-- le commentaire -- 7 -->
                 <img
                   class="livres"
-                  src="img/les-cigares-du-pharaon.png?width=800"
+                  src="img/editions/les-cigares-du-pharaon.png?width=800"
                   alt=""
                 />
 
@@ -545,7 +660,7 @@
                 <!-- le commentaire -- 8 -->
                 <img
                   class="livres"
-                  src="img/les-bijoux-de-la-castafiore-fr.jpg?width=800"
+                  src="img/editions/les-bijoux-de-la-castafiore-fr.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 8 -->
@@ -554,7 +669,7 @@
                 <!-- le commentaire -- 9 -->
                 <img
                   class="livres"
-                  src="img/les-7-boules-de-cristal-fr.jpg?width=800"
+                  src="img/editions/les-7-boules-de-cristal-fr.jpg?width=800"
                   alt=""
                 />
 
@@ -568,7 +683,7 @@
                 <!-- le commentaire -- 10 -->
                 <img
                   class="livres"
-                  src="img/le-tresor-de-rackham-le-rouge-fr.jpg?width=800"
+                  src="img/editions/le-tresor-de-rackham-le-rouge-fr.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 10 -->
@@ -577,7 +692,7 @@
                 <!-- le commentaire -- 11 -->
                 <img
                   class="livres"
-                  src="img/le-temple-du-soleil-fr.jpg?width=800"
+                  src="img/editions/le-temple-du-soleil-fr.jpg?width=800"
                   alt=""
                 />
 
@@ -587,7 +702,7 @@
                 <!-- le commentaire -- 12 -->
                 <img
                   class="livres"
-                  src="img/le-secret-de-la-licorne-fr.jpg?width=800"
+                  src="img/editions/le-secret-de-la-licorne-fr.jpg?width=800"
                   alt=""
                 />
                 <!-- -- 12 -->
@@ -629,9 +744,25 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-12">bouton retour en haut</div>
+          <div class="col-12">
+            <div class="paginacontainer">
+              <div class="progress-wrap">
+                <svg
+                  class="progress-circle svg-content"
+                  width="100%"
+                  height="100%"
+                  viewBox="-1 -1 102 102"
+                >
+                  <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css"></script>
     </main>
 
     <br />
@@ -641,21 +772,25 @@
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <img class="logo" src="img/logo-casterman.jpg" alt="" />
+            <img
+              class="logo"
+              src="img/icones/logo-casterman.png"
+              alt="logo casterman"
+            />
             <div class="box-réseaux-sociaux">
               <img
                 class="réseaux-sociaux"
-                src="img/icone-facebook.jpg"
+                src="img/icones/icone-facebook.png"
                 alt="icone-facebook"
               />
               <img
                 class="réseaux-sociaux"
-                src="img/icone-youtube.jpg"
+                src="img/icones/icone-youtube.png"
                 alt="icone-youtube"
               />
               <img
                 class="réseaux-sociaux"
-                src="img/icone-instagram.jpg"
+                src="img/icones/icone-instagram.png"
                 alt="icone-instagram"
               />
             </div>
@@ -715,6 +850,7 @@
     </footer>
 
     <script src="js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   </body>
 </html>
 
