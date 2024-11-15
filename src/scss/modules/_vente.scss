@@ -1,0 +1,24 @@
+.livres {
+  max-width: 460px;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.presentation {
+  border: 1px solid black; /* Bordure noire de 1px */
+  max-width: 68px;
+}
+
+.livre-de-vente {
+  max-width: 658px;
+}
+
+.section-achat {
+  margin-top: 62px;
+  margin-bottom: 324px;
+}

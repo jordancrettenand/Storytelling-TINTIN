@@ -1,0 +1,77 @@
+//-- CARROUSEL COMMENTAIRES ------------------------------------------------------
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Couleur de fond */
+  // padding: 20px;
+  // overflow-x: hidden; /* Masque le débordement horizontal */
+}
+
+.boc {
+  display: flex; /* Utiliser flexbox pour aligner les boîtes côte à côte */
+  flex-wrap: nowrap;
+  justify-content: space-between; /* Espacement entre les boîtes */
+}
+
+.commentaire {
+  background-color: #ffd300; /* Couleur de fond de la boîte de commentaire */
+  border: 1px solid #0d0d0d; /* Bord de la boîte */
+  width: 330px; /* Largeur fixe */
+  height: 188px; /* Hauteur fixe */
+  padding: 20px; /* Espacement intérieur augmenté */
+  margin-bottom: 20px; /* Espacement entre les boîtes */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre */
+  overflow: hidden; /* Éviter le débordement du texte */
+}
+
+.header {
+  display: flex; /* Utiliser flexbox pour aligner les éléments */
+  justify-content: space-between; /* Espacement entre les éléments */
+  align-items: center; /* Centrer verticalement */
+}
+
+.etoiles {
+  font-size: 20px; /* Taille de la notation par étoiles */
+}
+
+.profil {
+  display: flex; /* Utiliser flexbox pour aligner l'icône et le nom */
+  align-items: center; /* Centrer verticalement */
+}
+
+.icon {
+  width: 30px; /* Largeur de l'icône de profil */
+  height: 30px; /* Hauteur de l'icône de profil */
+  border-radius: 50%; /* Arrondir l'icône */
+  margin-right: 10px; /* Espacement entre l'icône et le nom */
+}
+
+.nom {
+  font-weight: bold; /* Mettre le nom en gras */
+}
+
+.texte {
+  margin-top: 10px; /* Espacement entre l'en-tête et le texte */
+  font-size: 14px; /* Taille du texte */
+  line-height: 1.4; /* Hauteur de ligne pour le texte */
+  overflow: hidden; /* Éviter le débordement du texte */
+  text-overflow: ellipsis; /* Ajouter des points de suspension si le texte déborde */
+  display: -webkit-box; /* Pour le support de l'ellipsis */
+  -webkit-box-orient: vertical; /* Orientation verticale */
+  -webkit-line-clamp: 4; /* Limiter à 4 lignes */
+}
+
+//----------------------------------------------------------------------------------
+
+//-- CARROUSEL EDITIONS LIVRES ------------------------------------------------------
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner .col {
+  padding: 0 5px;
+}
+
+//----------------------------------------------------------------------------------

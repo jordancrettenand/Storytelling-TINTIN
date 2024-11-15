@@ -1,3 +1,13 @@
+// -- CODE DE FONCTIONEMENT GSAP -----------------------------------------------------------------------
+
+import { gsap } from "gsap";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+// -------------------------------------------------------------------------
+
 // -- animation commentaire -----------------------------------------------------------------------
 $(document).ready(function () {
   $("#imageCarousel").carousel({
@@ -74,4 +84,43 @@ window.onscroll = function () {
   document.getElementById("progress-bar").style.width = scrollPercent + "%";
   document.getElementById("progress-icon").style.left = scrollPercent + "%"; // Déplace la fusée
 };
+// -------------------------------------------------------------------------
+
+// -- SCROLL HORIZONTAL -----------------------------------------------------------------------
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// let sections = gsap.utils.toArray(".panel");
+
+// gsap.to(sections, {
+//   xPercent: -100 * (sections.length - 1),
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".container",
+//     pin: true,
+//     scrub: 1,
+//     snap: 1 / (sections.length - 1),
+//     end: () => "+=" + document.querySelector(".container").offsetWidth,
+//   },
+// });
+
+// -------------------------------------------------------------------------
+
+// <!-- forme tranversante diagonal ---------------- -->
+
+gsap.registerPlugin(ScrollTrigger);
+
+const square = document.querySelector(".square");
+
+gsap.to(square, {
+  x: window.innerWidth + 100, // Déplacement vers la droite et hors de l'écran
+  y: window.innerHeight + 100, // Déplacement vers le bas et hors de l'écran
+  scrollTrigger: {
+    trigger: "body",
+    start: "top top", // Débute lorsque le haut du body atteint le haut de la fenêtre
+    end: "bottom top", // Finit lorsque le bas du body atteint le haut de la fenêtre
+    scrub: true, // Synchronisation avec le scroll
+  },
+});
+
 // -------------------------------------------------------------------------

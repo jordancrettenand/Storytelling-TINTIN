@@ -1,0 +1,30 @@
+//-- BARRE DE PROGRESSION ------------------------------------------------------
+
+#progress-container {
+  position: fixed;
+  top: 26px;
+  left: 20px;
+  right: 20px;
+  height: 10px; /* Augmentez la hauteur pour la bordure */
+  background-color: #211f1f; /* Couleur de fond de la bordure */
+  z-index: 1000;
+  border-radius: 5px; /* Arrondi des angles de la bordure */
+  padding: 2px; /* Ajoute de l'espace autour de la barre jaune */
+}
+
+#progress-bar {
+  height: 100%;
+  background-color: rgb(230, 192, 0);
+  transition: width 0.1s ease;
+  border-radius: 5px; /* Arrondi des angles de la barre jaune */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optionnel : ajoute une ombre pour le style */
+}
+
+#progress-icon {
+  position: absolute;
+  top: -15px; /* Ajustez selon vos besoins pour que la fusée soit bien visible */
+  height: 40px; /* Agrandir la taille de la fusée (20px x 2) */
+  transition: left 0.1s ease; /* Animation de mouvement */
+}
+
+//----------------------------------------------------------------------------------
