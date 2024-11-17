@@ -74,4 +74,50 @@ body {
   padding: 0 5px;
 }
 
-//----------------------------------------------------------------------------------
+//-- CARROUSEL LIVRES EDITIONS --------------------------------------------------------------------------------
+// body {
+//   margin: 0;
+//   background-color: black;
+//   overflow: hidden;
+// }
+
+// .custom-carousel {
+//   position: relative;
+//   width: 100vw;
+//   height: 100vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .custom-carousel img {
+//   max-width: 100%;
+//   max-height: 100%;
+//   display: none;
+//   position: absolute;
+// }
+
+// .custom-carousel img.custom-active {
+//   display: block;
+// }
+
+// .custom-button-container {
+//   position: absolute;
+//   bottom: 20px;
+//   text-align: center;
+//   width: 100%;
+// }
+
+// .custom-button-container button {
+//   padding: 10px 20px;
+//   font-size: 16px;
+//   background-color: white;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   transition: background-color 0.3s;
+// }
+
+// .custom-button-container button:hover {
+//   background-color: gray;
+// }

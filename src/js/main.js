@@ -124,3 +124,63 @@ gsap.to(square, {
 });
 
 // -------------------------------------------------------------------------
+
+// -- carousel édition livre -----------------------------------------------------------------------
+
+const carousel = document.getElementById("carousel");
+const images = Array.from(carousel.children);
+const totalImages = images.length;
+let currentIndex = 0;
+
+function updateCarousel() {
+  // Mettre à jour les classes et l'état des images
+  images.forEach((img, index) => {
+    const position = (index - currentIndex + totalImages) % totalImages;
+
+    if (position === 0) {
+      img.classList.add("active"); // Au centre, le plus grand
+      img.style.display = "block";
+    } else if (position === 1 || position === totalImages - 1) {
+      img.classList.remove("active");
+      img.style.display = "block"; // Visible à gauche et à droite
+    } else {
+      img.classList.remove("active");
+      img.style.display = "none"; // Caché hors du cadre
+    }
+  });
+}
+
+document.getElementById("prev").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+  updateCarousel();
+});
+
+document.getElementById("next").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % totalImages;
+  updateCarousel();
+});
+
+// Auto-slide toutes les 3 secondes
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % totalImages;
+  updateCarousel();
+}, 3000);
+
+// Initialisation
+updateCarousel();
+
+// -------------------------------------------------------------------------
+
+// --- sroll vertival
+
+// -- livre édition ------
+// let customCurrentIndex = 0;
+// const customImages = document.querySelectorAll(".custom-carousel img");
+
+// document
+//   .getElementById("custom-next-button")
+//   .addEventListener("click", function () {
+//     customImages[customCurrentIndex].classList.remove("custom-active");
+//     customCurrentIndex = (customCurrentIndex + 1) % customImages.length;
+//     customImages[customCurrentIndex].classList.add("custom-active");
+//   });
