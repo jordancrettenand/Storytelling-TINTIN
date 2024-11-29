@@ -171,16 +171,39 @@ updateCarousel();
 
 // -------------------------------------------------------------------------
 
-// --- sroll vertival
-
 // -- livre édition ------
-// let customCurrentIndex = 0;
-// const customImages = document.querySelectorAll(".custom-carousel img");
+const track = document.querySelector(".custom-carousel-images");
+const prevButton = document.getElementById("custom-prev-button");
+const nextButton = document.getElementById("custom-next-button");
 
-// document
-//   .getElementById("custom-next-button")
-//   .addEventListener("click", function () {
-//     customImages[customCurrentIndex].classList.remove("custom-active");
-//     customCurrentIndex = (customCurrentIndex + 1) % customImages.length;
-//     customImages[customCurrentIndex].classList.add("custom-active");
-//   });
+let currentIndex = 0;
+const totalImages = document.querySelectorAll(
+  ".custom-carousel-images img"
+).length;
+const visibleImages = 3;
+
+const updateCarousel = () => {
+  const offset = currentIndex * (200 + 20); // Image width + margin
+  track.style.transform = `translateX(-${offset}px)`;
+};
+
+const autoScroll = () => {
+  currentIndex = (currentIndex + 1) % (totalImages - visibleImages + 1);
+  updateCarousel();
+};
+
+// Auto-scroll every 5 seconds
+setInterval(autoScroll, 5000);
+
+prevButton.addEventListener("click", () => {
+  currentIndex = Math.max(currentIndex - 1, 0);
+  updateCarousel();
+});
+
+nextButton.addEventListener("click", () => {
+  currentIndex = Math.min(currentIndex + 1, totalImages - visibleImages);
+  updateCarousel();
+});
+
+// -------------------------------------------------------------------------
+// --- sroll vertival

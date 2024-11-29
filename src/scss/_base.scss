@@ -26,6 +26,10 @@ h1 {
 }
 //----------------------------------------------------------------------------------
 
+.book {
+  max-height: 300px;
+}
+
 //-- FOOTER -------------------------------------------------------------------------------------
 
 footer {
@@ -101,51 +105,129 @@ main {
 
 //----------------------------------------------------------------------------------
 
-//-- livre edition -------------------------------------------------------------------------------
+//-- scroll horizontal -------------------------------------------------------------------------------
 
-// body {
-//   margin: 0;
-//   background-color: black;
-//   overflow: hidden;
-// }
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
 
-// .custom-carousel {
-//   position: relative;
-//   width: 100vw;
-//   height: 100vh;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
 
-// .custom-carousel img {
-//   max-width: 100%;
-//   max-height: 100%;
-//   display: none;
-//   position: absolute;
-// }
+.slider {
+  background: white;
+  padding: 50px;
+  height: 100px;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  background-color: #1c1c1c;
 
-// .custom-carousel img.custom-active {
-//   display: block;
-// }
+  display: flex;
+  height: 900px;
+  justify-content: center;
+  overflow: hidden;
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  padding: 50px;
+  height: 100px;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+@media screen and (max-width: 720px) {
+  .slider img {
+    width: auto;
+  }
+}
 
-// .custom-button-container {
-//   position: absolute;
-//   bottom: 20px;
-//   text-align: center;
-//   width: 100%;
-// }
+//----------------------------------------------------------------------------------
 
-// .custom-button-container button {
-//   padding: 10px 20px;
-//   font-size: 16px;
-//   background-color: white;
-//   border: none;
-//   border-radius: 5px;
-//   cursor: pointer;
-//   transition: background-color 0.3s;
-// }
+//--- Livre édition scroll -------------------------------------------------------------------------------
 
-// .custom-button-container button:hover {
-//   background-color: gray;
-// }
+.custom-carousel-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.custom-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.custom-carousel-track {
+  display: flex;
+  overflow: hidden;
+  width: 800px; /* Largeur augmentée pour mieux accueillir les images agrandies */
+}
+
+.custom-carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-carousel-images img {
+  width: 300px; /* Taille agrandie des images */
+  height: auto;
+  margin: 0 15px; /* Plus d'espace entre les images pour qu'elles soient visibles */
+}
+
+.custom-carousel-controls {
+  display: flex;
+  gap: 20px;
+}
+
+.custom-carousel-controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffd300;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-carousel-controls button:hover {
+  background-color: #ffd300;
+}
